@@ -149,6 +149,14 @@ const likePhoto = async (req, res, next) => {
     } else {
       photo.likes.push(userId);
     }
+
+    await photo.save();
+
+    const updatePhoto = await Photo.findById(photo._id).populate(
+      "userId",
+      "name"
+    );
+    res.json({ success: true, photo: updatePhoto });
   } catch (err) {
     next(err);
   }
