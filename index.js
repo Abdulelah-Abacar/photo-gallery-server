@@ -16,7 +16,7 @@ const UPLOAD_DIR = process.env.UPLOAD_DIR;
 
 connectDB();
 
-app.use(cors({ origin: FRONTEND_URL }));
+app.use(cors({ origin: FRONTEND_URL, credentials: true }));
 
 app.use(express.json());
 app.use("/uploads", express.static(UPLOAD_DIR));
