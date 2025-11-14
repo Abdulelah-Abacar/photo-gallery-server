@@ -247,3 +247,8 @@ Ensure these are set in your production environment:
 1. Create a Vercel account
 2. Create a new project and get your `BLOB_READ_WRITE_TOKEN`
 3. Add the token to your environment variables
+
+## 🔗 Related Projects
+
+- [Frontend UI](https://github.com/Abdulelah-Abacar/photo-gallery) -
+  React/Tailwind frontend UI
