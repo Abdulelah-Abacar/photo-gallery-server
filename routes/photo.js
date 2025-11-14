@@ -1,6 +1,6 @@
 const express = require("express");
 const { authenticateToken } = require("../middleware/auth");
-const { upload } = require("../middleware/upload");
+const { upload } = require("../middleware/vercelBlobUpload");
 const {
   getAllPhotos,
   getUserPhotos,
